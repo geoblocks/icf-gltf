@@ -5,7 +5,7 @@ import { GLTFExporter, GLTFExporterOptions } from 'three/examples/jsm/exporters/
 
 
 export interface IfcToGLTFOptions {
-  element: HTMLElement;
+  element?: HTMLElement;
   url: string | ArrayBuffer;
   webIfcSettings?: OBC.IfcFragmentSettings;
 }
@@ -27,7 +27,8 @@ export async function ifcToGLTF(options: IfcToGLTFOptions): Promise<{
   >();
 
   world.scene = new OBC.SimpleScene(components);
-  world.renderer = new OBC.SimpleRenderer(components, options.element);
+  const element = options.element || document.createElement('div');
+  world.renderer = new OBC.SimpleRenderer(components, element);
   world.camera = new OBC.SimpleCamera(components);
 
   components.init();

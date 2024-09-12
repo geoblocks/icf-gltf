@@ -9,7 +9,7 @@ export default {
     lib: {
       formats: ['es'],
       entry: './src/index.ts',
-      fileName: 'icf-gltf',
+      fileName: 'ifc-gltf',
     }
   }
 } satisfies UserConfig
