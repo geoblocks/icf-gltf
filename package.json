@@ -1,5 +1,5 @@
 {
-  "name": "ifc-gltf",
+  "name": "@geoblocks/ifc-gltf",
   "version": "0.0.1",
   "description": "Function to import IFC file and convert it to gLTF",
   "main": "dist/ifc-gltf.js",
