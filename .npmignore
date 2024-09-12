@@ -1,5 +1,5 @@
 *
-!dist/icf-gltf.js
+!dist/ifc-gltf.js
 !dist/*.wasm
 !package.json
 !src/*
