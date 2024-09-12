@@ -1,0 +1,25 @@
+{
+  "name": "ifc-gltf",
+  "version": "0.0.1",
+  "description": "Function to import IFC file and convert it to gLTF",
+  "main": "dist/ifc-gltf.js",
+  "scripts": {
+    "start": "vite",
+    "prepare": "npm run build; tsc --emitDeclarationOnly",
+    "build": "NODE_ENV=production vite build",
+    "test": "tsc --noEmit"
+  },
+  "types": "lib/types/index.d.ts",
+  "type": "module",
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "@thatopen/components": "^2.2.10"
+  },
+  "devDependencies": {
+    "@cesium/engine": "^11.0.0",
+    "@types/three": "^0.168.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.3"
+  }
+}

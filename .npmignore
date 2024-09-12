@@ -1,0 +1,6 @@
+*
+!dist/icf-gltf.js
+!dist/*.wasm
+!package.json
+!src/*
+!lib/types/*
